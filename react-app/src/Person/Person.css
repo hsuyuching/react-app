@@ -1,0 +1,24 @@
+.Person {
+    width: 40%;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 2px #ccc;
+    text-align: center;
+    padding: 10px;
+}
+button {
+    background-color: cadetblue;
+    margin: 10px;
+    padding: 10px;
+    font-size: large;
+    cursor: pointer
+}
+button:focus {
+    background-color: chocolate;
+}
+input {
+    background-color: burlywood;
+    display: block;
+    margin: auto;
+}
