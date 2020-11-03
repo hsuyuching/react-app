@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import Radium from 'radium';
 import Person from './Person/Person';
 
 class App extends Component {
@@ -42,18 +41,18 @@ class App extends Component {
 
   render() {
     const persons = (
-      <div>
-        {this.state.persons.map((person, idx) => {
-          return <Person 
-            name={person.name}
-            password={person.password}
-            submit={() => this.submit(idx)}
-            key={person.id}
-            setUserName={(event) => this.setUserNameHandler(event, person.id)}
-            setUserPassword={(event) => this.setUserPasswordHandler(event, person.id)}
-          />
-        })}
-      </div>
+        <div>
+          {this.state.persons.map((person, idx) => {
+            return <Person 
+              name={person.name}
+              password={person.password}
+              submit={() => this.submit(idx)}
+              key={person.id}
+              setUserName={(event) => this.setUserNameHandler(event, person.id)}
+              setUserPassword={(event) => this.setUserPasswordHandler(event, person.id)}
+            />
+          })}
+        </div>
     );
     return (
       <div className="App">
@@ -64,4 +63,4 @@ class App extends Component {
   }
 }
 
-export default Radium(App);
+export default App;
